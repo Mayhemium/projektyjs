@@ -3,13 +3,28 @@
     height:700px;
     background-color: aqua;
     margin:0 auto;
+    position: relative;
 }
 .ball{
     width: 20px;
     height: 20px;
     border-radius: 10px;
     background-color: red;
-    position: relative;
+    position: absolute;
     left:340px;
     top:340px;
+}
+.win{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: green;
+    position: absolute;
+}
+.hole{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
 }
