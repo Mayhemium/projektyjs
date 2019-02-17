@@ -1,0 +1,78 @@
+.buttons{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: lightseagreen;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.buttons>div{
+    user-select: none;
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border: 2px solid dodgerblue;
+    text-align: center;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.buttons>div:hover{
+    box-shadow: 0 0 20px 0 black;
+}
+.hover{
+    box-shadow: 0 0 20px 0 black !important;
+}
+.recording{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.recording>div{
+    padding-top: 5px;
+    user-select: none;
+    font-size: 25px;
+    width: 80px;
+    height: 40px;
+    margin: 0 20px;
+    border: 2px solid dodgerblue;
+    text-align: center;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.recording>div:hover{
+    box-shadow: 0 0 20px 0 black;
+}
+.selected{
+    background-color: aqua !important;
+}
+.playall{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.playall>div{
+    padding-top: 5px;
+    user-select: none;
+    font-size: 25px;
+    width: 160px;
+    height: 40px;
+    margin: 0 20px;
+    border: 2px solid dodgerblue;
+    text-align: center;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.playall>div:hover{
+    box-shadow: 0 0 20px 0 black;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fota">
+        <canvas id="canvas">
+
+        </canvas>
+        <input type="file" name="" id="inp">
+        <div class="checkboxes">
+            <div>
+                <p>brak</p>
+                <input type="radio" name="filter" onclick="deleteFilter()" checked>
+            </div>
+            <div>
+                <p>szarosc</p>
+                <input type="radio" name="filter" onclick="greyOut()">
+            </div>
+            <div>
+                <p>sepia</p>
+                <input type="radio" name="filter" onclick="sepia()">
+            </div>
+            <div>
+                <p>rozmycie</p>
+                <input type="radio" name="filter" onclick="blurOut()">
+            </div>
+            <div>
+                <p>kolor pędzla</p>
+                <input type="color" id="colorPicker" value="#ff0000">
+            </div>
+            <div>
+                <p>rozmiar pędzla</p>
+                <input type="number" id="sizePicker" min="10" value="10" style="width:40px;">
+            </div>
+        </div>
+        <p>jasnosc</p>
+        <input type="range" min="-60" max="60" name="" id="jasnosc">
+        <p>kontrast</p>
+        <input type="range" min="-200" max="200" name="" id="kontrast">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
