@@ -1,0 +1,80 @@
+#addBtn{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    border-radius: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    color: aliceblue;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s linear all;
+}
+#addBtn:hover{
+    box-shadow: 0 0 20px black;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.note{
+    background-color: red;
+    width: 250px;
+    min-height: 100px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 8px black;
+    position: relative;
+    text-align: center;
+}
+.pinned{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+}
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.note>textarea{
+    width: 244px;
+    height: 200px;
+    resize: none;
+}
+.note>input{
+    margin: 10px;
+    text-align: center;
+}
+.note>input[type=color]{
+    width: 200px;
+}
+.pin{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-image: url(img/push-pin.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+}
+.pin:hover{
+    box-shadow: 0 0 10px black;
+}
