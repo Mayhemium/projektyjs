@@ -95,6 +95,7 @@ function updateNote(e){
 //initial load of notes from storage
 function init(){
     notes = JSON.parse(localStorage.getItem("notes"));
+    if(!notes) notes =[];
     notes.forEach(element => {
         addNote(element);
     });
